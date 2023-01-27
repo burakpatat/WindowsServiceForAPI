@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace TravelPortApi.Environments.Response.HotelSearchByLocation
+namespace TravelPortApi.Environments.Response
 { 
     public class Address
     {

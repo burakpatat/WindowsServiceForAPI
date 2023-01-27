@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace TravelPortApi.Environments.Response.HotelDetail
+namespace TravelPortApi.Environments.Response
 {
-    public class AccessibilityFeature
+    [JsonObject("AccessibilityFeature")]
+    public class HotelDetail_AccessibilityFeature
     {
         [JsonProperty("description")]
         public string Description { get; set; }
@@ -16,7 +17,8 @@ namespace TravelPortApi.Environments.Response.HotelDetail
         public string Value { get; set; }
     }
 
-    public class Address
+    [JsonObject("Address")]
+    public class HotelDetail_Address
     {
         [JsonProperty("AddressLine")]
         public List<string> AddressLine { get; set; }
@@ -34,7 +36,8 @@ namespace TravelPortApi.Environments.Response.HotelDetail
         public string PostalCode { get; set; }
     }
 
-    public class Country
+    [JsonObject("Country")]
+    public class HotelDetail_Country
     {
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -43,7 +46,8 @@ namespace TravelPortApi.Environments.Response.HotelDetail
         public string Value { get; set; }
     }
 
-    public class GuestRoomInfo
+    [JsonObject("GuestRoomInfo")]
+    public class HotelDetail_GuestRoomInfo
     {
         [JsonProperty("code")]
         public string Code { get; set; }
@@ -55,7 +59,8 @@ namespace TravelPortApi.Environments.Response.HotelDetail
         public string Description { get; set; }
     }
 
-    public class Image
+    [JsonObject("Image")]
+    public class HotelDetail_Image
     {
         [JsonProperty("dimensionCategory")]
         public string DimensionCategory { get; set; }
@@ -76,19 +81,22 @@ namespace TravelPortApi.Environments.Response.HotelDetail
         public string Value { get; set; }
     }
 
-    public class Properties
+    [JsonObject("Properties")]
+    public class HotelDetail_Properties
     {
         [JsonProperty("PropertyInfo")]
         public List<PropertyInfo> PropertyInfo { get; set; }
     }
 
-    public class PropertiesResponse
+    [JsonObject("PropertiesResponse")]
+    public class HotelDetail_PropertiesResponse
     {
         [JsonProperty("Properties")]
         public Properties Properties { get; set; }
     }
 
-    public class Property
+    [JsonObject("Property")]
+    public class HotelDetail_Property
     {
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -106,10 +114,10 @@ namespace TravelPortApi.Environments.Response.HotelDetail
         public List<string> Description { get; set; }
 
         [JsonProperty("AccessibilityFeature")]
-        public List<AccessibilityFeature> AccessibilityFeature { get; set; }
+        public List<HotelDetail_AccessibilityFeature> AccessibilityFeature { get; set; }
 
         [JsonProperty("GuestRoomInfo")]
-        public List<GuestRoomInfo> GuestRoomInfo { get; set; }
+        public List<HotelDetail_GuestRoomInfo> GuestRoomInfo { get; set; }
 
         [JsonProperty("Address")]
         public Address Address { get; set; }
@@ -118,22 +126,25 @@ namespace TravelPortApi.Environments.Response.HotelDetail
         public List<string> Telephone { get; set; }
 
         [JsonProperty("PropertyAmenity")]
-        public List<PropertyAmenity> PropertyAmenity { get; set; }
+        public List<HotelDetail_PropertyAmenity> PropertyAmenity { get; set; }
     }
 
-    public class PropertyAmenity
+    [JsonObject("PropertyAmenity")]
+    public class HotelDetail_PropertyAmenity
     {
         [JsonProperty("description")]
         public string Description { get; set; }
     }
 
-    public class PropertyInfo
+    [JsonObject("PropertyInfo")]
+    public class HotelDetail_PropertyInfo
     {
         [JsonProperty("Property")]
         public Property Property { get; set; }
     }
 
-    public class PropertyKey
+    [JsonObject("PropertyKey")]
+    public class HotelDetail_PropertyKey
     {
         [JsonProperty("chainCode")]
         public string ChainCode { get; set; }
@@ -148,7 +159,8 @@ namespace TravelPortApi.Environments.Response.HotelDetail
         public PropertiesResponse PropertiesResponse { get; set; }
     }
 
-    public class StateProv
+    [JsonObject("StateProv")]
+    public class HotelDetail_StateProv
     {
         [JsonProperty("value")]
         public string Value { get; set; }
