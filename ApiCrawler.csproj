@@ -104,8 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Environments\GetData.cs" />
+    <Compile Include="Environments\Hotel\Request\HotelRules.cs" />
     <Compile Include="Environments\Hotel\Request\HotelAvailability.cs" />
     <Compile Include="Environments\Hotel\Request\HotelSearchByLocation.cs" />
+    <Compile Include="Environments\Hotel\Response\HotelAvailabilityother.cs" />
+    <Compile Include="Environments\Hotel\Response\HotelAvailability.cs" />
     <Compile Include="Environments\Hotel\Response\HotelDetails.cs" />
     <Compile Include="Environments\Hotel\Response\HotelSearchByLocation.cs" />
     <Compile Include="Environments\Hotel\State\HotelSearchByLocationState.cs" />
@@ -135,6 +138,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Environments\JSON\Types\" />
     <Folder Include="log\" />
   </ItemGroup>
   <ItemGroup>
